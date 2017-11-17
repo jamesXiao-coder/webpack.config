@@ -8,7 +8,8 @@ const publicPath = ""
 
 module.exports = (option = {}) => ({
   entry: {
-    index: resolve(__dirname, './src/main.js') //入口文件
+    index: resolve(__dirname, './src/main.js'), //入口文件
+    vendor: resolve(__dirname, './src/vendor') // 打包公共库
   },
   output: {
     path: resolve(__dirname, 'dist'), //打包输出的文件路径
@@ -85,7 +86,11 @@ module.exports = (option = {}) => ({
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+    // 打包公共库需要的配置
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   names: ['vendor', 'manifest']
+    // })
   ],
   devtool: option.dev ? '#eval-source-map' : '#source-map'
 })
