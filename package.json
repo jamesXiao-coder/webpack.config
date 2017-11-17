@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/xiaohongjian1989/webpack.config/issues"
   },
-  "homepage": "https://github.com/xiaohongjian1989/webpack.config#readme"
+  "homepage": "https://github.com/xiaohongjian1989/webpack.config#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
 }
