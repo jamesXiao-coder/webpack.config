@@ -1,0 +1,20 @@
+{
+  "name": "webpack.config",
+  "version": "1.0.0",
+  "description": "通用的webpack配置",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaohongjian1989/webpack.config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaohongjian1989/webpack.config/issues"
+  },
+  "homepage": "https://github.com/xiaohongjian1989/webpack.config#readme"
+}
